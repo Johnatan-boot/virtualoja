@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './reutilizaveis/components/header/header.component';
 import { FormsModule } from '@angular/forms';
+import { CartService } from './services/cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    CartService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
