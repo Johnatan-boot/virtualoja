@@ -1,0 +1,23 @@
+<header>
+    <div class="navbar navbar-dark  shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+
+            <div class="form-group">
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" aria-label="Search"
+                  [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Pesquisar Produtos">
+                  <button class="btn btn" type="submit">Search</button>
+                </form>
+            </div>
+            <span class="fas fa-search search-icon"></span>
+
+
+        </div>
+        <button routerLink="cart" class="btncart ">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+  </header>
+
